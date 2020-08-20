@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  background: black;
+  display: flex;
+}
+
+nav {
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header_logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 34px;
+  cursor: pointer;
+  margin-top: 46px;
+  margin-left: 12%;
+}
+
+.topnav a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 15px 16px;
+}
+
+.topnav a:hover {
+  border-top: 3px solid #fcac45;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+main .main_welcome {
+  background: black;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+
+main .main_welcome p {
+  color: #999999;
+  font-size: 20px;
+}
+
+main .main_welcome h1 {
+  color: #999999;
+  font-size: 44px;
+}
+
+.mycompany {
+  color: #fcac45;
+}
+
+.wrapper {
+  width: 76%;
+  margin: auto;
+}
+
+.main_about {
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+
+.about_right {
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+.about_right h1 {
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+}
+
+.about_right p {
+  margin: 30px 0 50px 0;
+  color: #6c6c6c
+}
+
+.about_list {
+  padding-left: 20px;
+}
+
+.about_list li {
+  font-style: italic;
+}
+
+.mv-100 {
+  min-width: 100%;
+}
+
+.main_team {
+  background: black;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: white;
+}
+
+.main_team h1 {
+  display: inline-block;
+  font-size: 44px;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+  margin-bottom: 105px;
+}
+
+.photo {
+  background: grey;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.team_cards {
+  display: flex;
+}
+
+.card {
+  padding: 0 8px 0 8px
+}
+
+.position {
+  margin: 0px 0 20px 0;
+}
+
+.underlined {
+  display: inline;
+  border-bottom: 3px solid #fcac45;
+}
+
+.services_cards {
+  text-align: center;
+  display: grid;
+  /* это свойство отвечает за то как выкладываются колонки. Также указывается кол-во колонок */
+  grid-template-columns: 100px 100px 100px 100px;
+  /* задаем интервал между колонками */
+  grid-column-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+  nav {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1486px) {
+  nav {
+    margin-left: 10%;
+  }
+  .topnav a {
+    padding: 15px 7px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav {
+    width: 100%;
+  }
+  .topnav.responsive {
+    position: relative;
+    top: 50px;
+    left: -200px;
+  }
+  header .topnav.responsive{
+    height: 340px;
+  }
+  .topnav.responsive a.icon{
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+main .main_welcome {
+    padding: 50px 0 50px 0;
+  }
+
+  .mv-100 {
+    max-width: 100%;
+  }
+main .main_about {
+  flex-direction: column;
+  }
+.about_right {
+  text-align: center;
+  margin: 0;
+  }
+  .about_list li {
+    text-align: left;
+  }
+  .team_cards {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+h1 {
+  Селектор по тегу
+}
+
+.class {
+  Селектор по классу
+}
+
+p.class {
+  Селектор по тегу с классом
+}
+
+#someid {
+  Селектор по id
+}
+
+p#some_id {
+  Селектор по тегу с id
+}
+
+.some_class span {
+  Тег внутри тега с классом
+}
+
+.class .other_class {
+  Селектор по классу внутри класса
+}
+
+ */
