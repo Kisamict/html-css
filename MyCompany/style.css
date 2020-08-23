@@ -7,7 +7,6 @@ a {
   text-decoration: none;
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -91,12 +90,6 @@ main .main_welcome h1 {
   margin-left: 15%;
 }
 
-.about_right h1 {
-  display: inline-block;
-  border-bottom: 3px solid #fcac45;
-  padding-bottom: 20px;
-}
-
 .about_right p {
   margin: 30px 0 50px 0;
   color: #6c6c6c
@@ -122,10 +115,7 @@ main .main_welcome h1 {
 }
 
 .main_team h1 {
-  display: inline-block;
   font-size: 44px;
-  border-bottom: 3px solid #fcac45;
-  padding-bottom: 20px;
   margin-bottom: 105px;
 }
 
@@ -150,19 +140,42 @@ main .main_welcome h1 {
 }
 
 .underlined {
-  display: inline;
-  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+  display: inline-block;
+  border-bottom: 4px solid #fcac45;
+}
+
+.main_services {
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.main_services h2{
+  font-size: 44px;
+}
+
+.services_description {
+  color: #6c6c6c;
+  margin: 55px 0 105px 0;
 }
 
 .services_cards {
   text-align: center;
   display: grid;
   /* это свойство отвечает за то как выкладываются колонки. Также указывается кол-во колонок */
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-columns: auto auto auto auto;
   /* задаем интервал между колонками */
   grid-column-gap: 20px;
 }
 
+.service_card h3{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.service_card p{
+  color: #3a3a3a;
+}
 
 
 
@@ -188,9 +201,11 @@ main .main_welcome h1 {
 }
 
 @media screen and (max-width: 1010px) {
+
   .topnav a {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     margin-top: -17px;
@@ -198,41 +213,48 @@ main .main_welcome h1 {
     color: #fff;
     font-size: 25px;
   }
+
   nav {
     width: 100%;
   }
+
   .topnav.responsive {
     position: relative;
     top: 50px;
     left: -200px;
   }
+
   header .topnav.responsive{
     height: 340px;
   }
+
   .topnav.responsive a.icon{
     position: absolute;
     top: -50px;
     right: -200px;
   }
+
   .topnav.responsive a{
     float: none;
     display: block;
     text-align: left;
   }
 
-main .main_welcome {
+  main .main_welcome {
     padding: 50px 0 50px 0;
   }
 
   .mv-100 {
     max-width: 100%;
   }
-main .main_about {
-  flex-direction: column;
-  }
-.about_right {
-  text-align: center;
-  margin: 0;
+
+  main .main_about {
+      flex-direction: column;
+    }
+
+  .about_right {
+    text-align: center;
+    margin: 0;
   }
   .about_list li {
     text-align: left;
@@ -242,49 +264,9 @@ main .main_about {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
+
+cheatsheet
 
 h1 {
   Селектор по тегу
