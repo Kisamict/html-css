@@ -162,9 +162,7 @@ main .main_welcome h1 {
 .services_cards {
   text-align: center;
   display: grid;
-  /* это свойство отвечает за то как выкладываются колонки. Также указывается кол-во колонок */
   grid-template-columns: auto auto auto auto;
-  /* задаем интервал между колонками */
   grid-column-gap: 20px;
 }
 
@@ -263,37 +261,3 @@ main .main_welcome h1 {
     flex-direction: column;
   }
 }
-
-/*
-
-cheatsheet
-
-h1 {
-  Селектор по тегу
-}
-
-.class {
-  Селектор по классу
-}
-
-p.class {
-  Селектор по тегу с классом
-}
-
-#someid {
-  Селектор по id
-}
-
-p#some_id {
-  Селектор по тегу с id
-}
-
-.some_class span {
-  Тег внутри тега с классом
-}
-
-.class .other_class {
-  Селектор по классу внутри класса
-}
-
- */
