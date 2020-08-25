@@ -260,4 +260,12 @@ main .main_welcome h1 {
   .team_cards {
     flex-direction: column;
   }
+
+  .services_cards {
+    grid-template-columns: auto auto;
+  }
+
+  .service_card {
+    padding-top: 15px;
+  }
 }
